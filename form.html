@@ -16,6 +16,28 @@
       line-height:1.6;
       padding:0 18px;
     }
+    
+    /* Reduce top margin on mobile devices */
+    @media (max-width: 768px) {
+      body {
+        margin: 20px auto;
+        padding: 0 16px;
+      }
+      h1 {
+        font-size: 24px;
+      }
+    }
+    
+    /* Further reduce margin on very small screens */
+    @media (max-width: 480px) {
+      body {
+        margin: 15px auto;
+        padding: 0 14px;
+      }
+      h1 {
+        font-size: 22px;
+      }
+    }
     h1{font-size:28px;margin:0 0 8px;}
     p.lead{color:#333;margin-top:0;margin-bottom:18px;}
     label{display:block;margin-top:12px;font-size:14px;}
