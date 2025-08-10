@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Submit Your Story</title>
+  <style>
+    /* Minimal white-page style */
+    html,body{height:100%}
+    body{
+      margin:40px auto;
+      max-width:720px;
+      font-family: Georgia, "Times New Roman", serif;
+      color:#000;
+      background:#fff;
+      line-height:1.6;
+      padding:0 18px;
+    }
+    h1{font-size:28px;margin:0 0 8px;}
+    p.lead{color:#333;margin-top:0;margin-bottom:18px;}
+    label{display:block;margin-top:12px;font-size:14px;}
+    input[type="text"], input[type="email"], textarea, select{
+      width:100%;padding:10px;border-radius:6px;border:1px solid #ccc;
+      background:#fff;color:inherit;font-size:15px;box-sizing:border-box;
+    }
+    textarea{min-height:120px;resize:vertical;}
+    .btn{
+      margin-top:16px;background:#111;color:#fff;padding:10px 14px;border-radius:6px;border:0;font-weight:700;
+    }
+    .hint{font-size:13px;color:#444;margin-top:8px;}
+    a.inline{color:#2b3db6;text-decoration:underline}
+  </style>
+</head>
+<body>
+  <h1>Open Source Stories — submit your story</h1>
+  <p class="lead">Short, honest answers. We read every submission. If your story fits the vibe, we’ll reach out.</p>
+
+  <!-- Replace the action URL with your deployed Apps Script web app URL -->
+  <form action="https://script.google.com/macros/s/AKfycbylruLbOC89KBBapYE4Abifk2EmKzQKvwQeBrd3BuKu5OIGMJ22CKrT4dNZHJ9lbX2C/exec" method="post">
+    <label for="name">Name</label>
+    <input id="name" name="name" type="text" required placeholder="Your name">
+
+    <label for="age">Age</label>
+    <input id="age" name="age" type="text" required placeholder="How old are you?">
+
+    <label for="what">What you're building / doing</label>
+    <textarea id="what" name="what" required placeholder="Briefly describe your project or what you do"></textarea>
+
+    <label for="why">Why your story is exceptional</label>
+    <textarea id="why" name="why" required placeholder="Tell the messy, weird, interesting part of your journey"></textarea>
+
+    <label for="links">Links (socials / work)</label>
+    <input id="links" name="links" type="text" required placeholder="instagram.com/…, github.com/…, website">
+
+    <label for="collab">Preferred way to collaborate</label>
+    <select id="collab" name="collab" required>
+      <option value="">Choose one</option>
+      <option value="self-guided">I'll make it myself with guidance</option>
+      <option value="end-to-end">You make it for me (end-to-end)</option>
+    </select>
+
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" required placeholder="your@email.com">
+
+    <button class="btn" type="submit">Submit</button>
+  </form>
+
+  <p class="hint">Pro tip: include one single weird moment in "why" — it's what makes stories memorable.</p>
+</body>
+</html>
